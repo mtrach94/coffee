@@ -1,0 +1,272 @@
+*,  
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body    {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(29, 31, 46, 0.7);
+}
+
+h1 {
+    margin: 0 0 10px;
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 60px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1D1F2E;
+    margin: 0 0 100px;
+}
+
+h2::before,
+h2::after {
+    content: '';
+    background-color: #ECECED;
+    height: 1px;
+    width: 30px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 3px;
+}
+
+h2::after {
+    margin-left: 15px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #1D1F2E;
+    margin: 0 0 5px;
+}
+
+p {
+    margin: 0 0 16px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+width: 100%;
+max-width: 970px;
+padding: 0 15px;
+margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #1D1F2E;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 9px 24px 8px;
+    text-decoration: none;
+    transition: opacity ease-in-out 0.3s;
+}
+
+.btn.btn-white {
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(29, 31, 46, 0.1);
+    color: #1D1F2E;
+    font-weight: 700;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.row.row-sm {
+    margin: 0 -8px;
+}
+
+.col {
+    padding: 0 10px;
+    margin-bottom: 65px;
+    width: 100%;
+}
+
+.col.col-sm {
+    padding: 0 8px;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: calc(100% / 3);
+}
+
+.header {
+    padding: 28px 0;
+}
+
+.header .container  {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-list   {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-item   {
+    padding: 0  15px;
+}
+
+.nav-link   {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1D1F2E;
+    transition: opacity ease-in-out 0.3s;
+}
+
+.nav-link:hover {
+    opacity: 0.7 ;
+}
+
+.cart-link  { 
+    display: flex;
+    align-items: center;
+}
+
+.cart-link span{
+    display: block;
+    padding: 0  10px;
+}
+
+.cart-link .cart-count {
+    background-color: #1D1F2E;
+    border-radius: 50%;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 18px;
+    min-width: 20px;
+    padding-left: 5px;
+    padding-right: 3px;
+}
+
+.hero-section {
+    background-color: #050827;
+    padding: 20px 0;
+    margin-bottom: 123px;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    min-height:  530px;
+    color: #FFFFFF;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+}
+ 
+.pseudo-title {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+.hero-section  .text-holder p {
+    margin: 0 0 38px;
+}
+
+.story-section {
+    margin: 0 0 102px;
+    text-align: center;
+}
+
+.story-section .container {
+    max-width: 690px;
+}
+
+.story-section h2 {
+    font-size: 28px;
+    line-height: 40px;
+    margin: 0 0 16px;
+    text-transform: none;
+}
+
+.story-link {
+    font-size: 15px;
+    line-height: 28px;
+    color: #A25F4B;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(162, 95, 75, 0.2);
+    padding-bottom: 2px;
+    transition: color ease-in-out 0.3s;
+}
+
+.story-link:hover {
+    color: rgba(162, 95, 75, 0.2);
+}
+
+.coffee-link {
+    text-decoration: none;
+    text-align: center;
+    color: rgba(29, 31, 46, 0.7);
+    font-size: 16px;
+    line-height: 28px;
+    
+}
+
+.coffee-link:hover .img-holder {
+    transform: scale(1.04);
+}
+
+.coffee-link .img-holder {
+    margin-bottom: 35px;
+    transition: transform ease-in-out o.3s; 
+}
+
+.coffee-link .new-price {
+    display: inline-block;
+    margin-right: 10px;
+    color: #A25F4B;
+    font-size: 19px;
+    line-height: 32px;
+}
+
+.coffee-link .old-price {
+    text-decoration-line: line-through;
+    color: rgba(29, 31, 46, 0.4);
+}
