@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet"  href="src/style/style.css">
+    <link rel="stylesheet"  href="src/style/css/main.css">
+    <script src="src/style/js/main.js" defer></script>
 </head>
 <body>
  <header class="header">
@@ -18,26 +19,32 @@
                 <img src="./src/img/logo.svg"   alt="CoffeeStyle"   class="logo">
             </a>
         </div>
-        <nav class="nav">
-           <ul class="nav-list">
-            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Our Products</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Styleguide</a></li>
-           </ul> 
-        </nav>
-            <a href="#" class="cart-link nav-link">
+        <div class="nav-holder js-nav-holder">
+            <nav class="nav">
+                <ul class="nav-list">
+                 <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                 <li class="nav-item"><a href="#" class="nav-link">Our Products</a></li>
+                 <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                 <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                 <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                 <li class="nav-item"><a href="#" class="nav-link">Styleguide</a></li>
+                </ul> 
+             </nav>
+             <a href="#" class="cart-link nav-link">
                 <div class="icon-holder">
                     <img src="./src/img/cart-icon.svg" alt="image description">
                 </div>
                 <span>cart</span>
                 <span class="cart-count">0</span>
             </a>
+        </div>
+            
+            <button class="nav-opener js-nav-opener">
+                <span></span>
+            </button>
     </div>
  </header> 
- <main  class="main">
+ <!-- <main  class="main">
     <section    class="hero-section"    style="background-image: url('./src/img/visual-bg.jpg')">
         <div    class="container">
             <div    class="hero-title-holder">
@@ -329,6 +336,6 @@
             </div>
         </div>
     </div>
- </footer>
+ </footer> -->
 </body>
 </html>
